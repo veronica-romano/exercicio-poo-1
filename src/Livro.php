@@ -2,7 +2,7 @@
 class Livro{
     private string $titulo;
     private string $autor;
-    private string $paginas;
+    private int $paginas = 0;
   
     public function getTitulo():string{
         return $this->titulo;
