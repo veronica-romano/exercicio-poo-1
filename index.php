@@ -17,7 +17,7 @@
     <hr>
 
     <?php
-        require_once "src/LivroTecnico.php";
+        //require_once "src/LivroTecnico.php";
         require_once "src/LivroTDidatico.php";
         require_once "src/LivroTProgramacao.php";
 
