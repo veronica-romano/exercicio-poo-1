@@ -26,21 +26,26 @@
         $livro3 = new LivroTProgramacao;
 
         $livro1->setTitulo('A origem das espécies');
-        $livro1->setFormato(['fisico', '']);
+        $livro1->setFormato(['fisico']);
         $livro1->setAutor(' Charles Darwin');
         $livro1->setPaginas(574);
+    
       
 
         $livro2->setTitulo("Teoria Pura do Direito");
+        $livro2->setFormato(['físico', 'digital']);
         $livro2->setAutor("Hans Kelsen");
-        $livro2->setPaginas(250);
         $livro2->setDisciplina('Direito');
-        $livro2->setNivel(['superior', '', '']);
+        $livro2->setNivel(['superior']);
+        $livro2->setPaginas(250);
+        
 
         $livro3->setTitulo("Codificação para Leigos");
+        $livro3->setFormato(['digital']);
         $livro3->setAutor("Nikhil Abraham");
-        $livro3->setPaginas(272);
         $livro3->setArea('full stack');
+        $livro3->setPaginas(272);
+        
 
     ?>
 
@@ -59,6 +64,7 @@
 
                 <div class="col">
                     <h3><?=$livro2->getTitulo()?></h3>
+                    <p>Formato: <?=$livro2->getFormato()?></p>
                     <p>Autor: <?=$livro2->getAutor()?></p>
                     <p>Disciplina: <?=$livro2->getDisciplina()?></p>
                     <p>Nível: <?=$livro2->getNivel()?></p>
@@ -67,6 +73,7 @@
 
                 <div class="col">
                     <h3><?=$livro3->getTitulo()?></h3>
+                    <p>Formato: <?=$livro3->getFormato()?></p>
                     <p>Autor: <?=$livro3->getAutor()?></p>
                     <p>Área: <?=$livro3->getArea()?></p>
                     <p><?=$livro3->getPaginas()?> páginas</p>

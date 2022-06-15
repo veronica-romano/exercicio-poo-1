@@ -6,7 +6,7 @@ class LivroTecnico extends Livro{
 
     public function getFormato(): string
     {
-        return implode('', $this->formato);
+        return implode(', ', $this->formato);
     }
     public function setFormato(array $formato): self
     {
