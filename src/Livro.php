@@ -26,6 +26,11 @@ class Livro{
     public function setPaginas(int $paginas){
         $this->paginas = $paginas;
     }
+
+    public function formataTitulo(){
+        echo "<b>". mb_strtoupper($this->getTitulo())."</b>";       
+
+    }
 }
 
 ?>

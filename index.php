@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Exercício 2 - POO</title>
+    <title>Exercício 3 - POO</title>
 </head>
 <body>
-    <h1 class="text-center mt-4">Exercício 2</h1>
+    <h1 class="text-center mt-4">Exercício 3</h1>
     
     <h2 class="text-center mt-4">
-        Implementar as sublasses, importar, criar objetos e mostrar os dados.
+        Implementar método formataTitulo
     </h2>
 
     <hr>
@@ -56,14 +56,14 @@
             <div class="container-flex row align-items-center text-center mt-4">  
 
                 <div class="col">
-                    <h3><?=$livro1->getTitulo()?></h3>
+                    <h3><?=$livro1->formataTitulo()?></h3>
                     <p>Formato: <?=$livro1->getFormato()?></p>
                     <p>Autor: <?=$livro1->getAutor()?></p>
                     <p><?=$livro1->getPaginas()?> páginas</p>
                 </div>
 
                 <div class="col">
-                    <h3><?=$livro2->getTitulo()?></h3>
+                    <h3><?=$livro2->formataTitulo()?></h3>
                     <p>Formato: <?=$livro2->getFormato()?></p>
                     <p>Autor: <?=$livro2->getAutor()?></p>
                     <p>Disciplina: <?=$livro2->getDisciplina()?></p>
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="col">
-                    <h3><?=$livro3->getTitulo()?></h3>
+                    <h3><?=$livro3->formataTitulo()?></h3>
                     <p>Formato: <?=$livro3->getFormato()?></p>
                     <p>Autor: <?=$livro3->getAutor()?></p>
                     <p>Área: <?=$livro3->getArea()?></p>
