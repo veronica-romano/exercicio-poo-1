@@ -28,7 +28,7 @@ class Livro{
     }
 
     public function formataTitulo(){
-        echo "<b>". mb_strtoupper($this->getTitulo())."</b>";       
+        return "<b>". mb_strtoupper($this->getTitulo())."</b>";       
 
     }
 }

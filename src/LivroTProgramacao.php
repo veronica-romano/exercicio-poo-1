@@ -16,7 +16,7 @@ class LivroTProgramacao extends LivroTecnico{
     }
 
     public function formataTitulo(){
-        echo "<i style='color:blue'>". mb_strtoupper($this->getTitulo())."</i>";       
+        return "<i style='color:blue'>". mb_strtoupper($this->getTitulo())."</i>";       
 
     }
 }
