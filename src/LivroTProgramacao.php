@@ -2,7 +2,7 @@
 use tecnico;
 require_once "LivroTecnico.php";
 
-class LivroTProgramacao extends LivroTecnico{
+class LivroTProgramacao extends tecnico{
     private string $area;
 
     public function getArea(): string
