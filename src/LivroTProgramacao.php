@@ -1,8 +1,9 @@
-<?php namespace programacao;
-use tecnico;
+<?php 
+namespace Desafio;
+
 require_once "LivroTecnico.php";
 
-class LivroTProgramacao extends tecnico{
+class LivroTProgramacao extends LivroTecnico{
     private string $area;
 
     public function getArea(): string

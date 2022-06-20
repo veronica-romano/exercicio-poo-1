@@ -1,5 +1,5 @@
-<?php namespace tecnico;
-use ler;
+<?php 
+namespace Desafio;
 require_once "Livro.php";
 
 class LivroTecnico extends Livro{

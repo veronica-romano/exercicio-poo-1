@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Exercício 3 - POO</title>
+    <title>Desafio - POO</title>
 </head>
 <body>
-    <h1 class="text-center mt-4">Exercício 3</h1>
+    <h1 class="text-center mt-4">Desafio 1</h1>
     
     <h2 class="text-center mt-4">
-        Implementar método formataTitulo
+        Pesquisar e implementar Namespaces, Composer e Autoload de classes.
     </h2>
 
     <hr>
 
     <?php
         //require_once "src/LivroTecnico.php";
-        require_once "src/LivroTDidatico.php";
-        require_once "src/LivroTProgramacao.php";
+        require "vendor/autoload.php";
+   
 
-        $livro1 = new LivroTecnico;
-        $livro2 = new LivroTDidatico;
-        $livro3 = new LivroTProgramacao;
+        $livro1 = new Desafio\LivroTecnico;
+        $livro2 = new Desafio\LivroTDidatico;
+        $livro3 = new Desafio\LivroTProgramacao;
+        $livro4 = new Desafio\LivroTPWeb;
 
         $livro1->setTitulo('A origem das espécies');
         $livro1->setFormato(['fisico']);
@@ -45,6 +46,14 @@
         $livro3->setAutor("Nikhil Abraham");
         $livro3->setArea('full stack');
         $livro3->setPaginas(272);
+
+        $livro4->setTitulo("Codificação FullStack");
+        $livro4->setFormato(['digital']);
+        $livro4->setAutor("Veronica");
+        $livro4->setArea('web');
+        $livro4->setPaginas(800);
+
+
         
 
     ?>

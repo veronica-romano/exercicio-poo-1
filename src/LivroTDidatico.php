@@ -1,4 +1,5 @@
-<?php
+<?php 
+namespace Desafio;
 require_once "LivroTecnico.php";
 
 class LivroTDidatico extends LivroTecnico{
