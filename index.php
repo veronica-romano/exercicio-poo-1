@@ -31,8 +31,6 @@
         $livro1->setAutor(' Charles Darwin');
         $livro1->setPaginas(574);
     
-      
-
         $livro2->setTitulo("Teoria Pura do Direito");
         $livro2->setFormato(['físico', 'digital']);
         $livro2->setAutor("Hans Kelsen");
@@ -86,6 +84,12 @@
                     <p>Autor: <?=$livro3->getAutor()?></p>
                     <p>Área: <?=$livro3->getArea()?></p>
                     <p><?=$livro3->getPaginas()?> páginas</p>
+                </div>
+
+                <div class="col">
+                    <h3><?=$livro4->formataTitulo()?></h3>
+                    <pre><?=var_dump($livro4)?></pre>
+                    
                 </div>
 
             </div>
