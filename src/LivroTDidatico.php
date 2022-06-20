@@ -1,7 +1,5 @@
 <?php 
 namespace Desafio;
-require_once "LivroTecnico.php";
-
 class LivroTDidatico extends LivroTecnico{
     private string $disciplina;
     private array $nivel = ['basico', 'medio', 'superior'];

@@ -1,8 +1,5 @@
 <?php 
 namespace Desafio;
-
-require_once "LivroTecnico.php";
-
 class LivroTProgramacao extends LivroTecnico{
     private string $area;
 

@@ -1,7 +1,5 @@
 <?php 
 namespace Desafio;
-require_once "Livro.php";
-
 class LivroTecnico extends Livro{
     private array $formato = ['digital', 'fisico'];
 

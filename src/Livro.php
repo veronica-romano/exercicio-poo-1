@@ -1,6 +1,5 @@
 <?php 
 namespace Desafio;
-
 class Livro{
     private string $titulo;
     private string $autor;
