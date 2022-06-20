@@ -1,4 +1,5 @@
-<?php
+<?php namespace programacao;
+use tecnico;
 require_once "LivroTecnico.php";
 
 class LivroTProgramacao extends LivroTecnico{

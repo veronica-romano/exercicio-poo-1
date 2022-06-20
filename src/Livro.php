@@ -1,4 +1,4 @@
-<?php
+<?php namespace ler;
 class Livro{
     private string $titulo;
     private string $autor;
